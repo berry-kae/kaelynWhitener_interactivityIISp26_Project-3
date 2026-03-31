@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <title> JavaScript eventListener Tutorial </title>
-    <script src ="script.js" defer></script>
 </head>
 <body>
     <button id="thisButton">This Button </button>
+    <p id ="message"></p>
 </body>
+<script>
+    const button = document.getElementById('thisButton');
+    button.addEventListener('click',function(){
+        document.getElementById('message').innerText = "button was clicked!";
+    });
+</script>
 
 </html>
