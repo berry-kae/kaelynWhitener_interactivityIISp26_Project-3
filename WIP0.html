@@ -4,13 +4,130 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Index</title>
-<link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file if you have one-->
+<link rel="stylesheet" href="styles.css">
+ <!-- Link to external CSS file if you have one-->
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<h1>white buttons </h1>
-<p>by Mary Ruefle, page created by Kaelyn</p>
-<button type="button">Click Me!</button>
-<style></style>
-<script></script> 
+<h1> text message </h1>
+<p>by Anthony Anaxagorou, page created by Kaelyn</p>
+<div class="container">
+    <button type="button" id="button1"
+    onclick="document.getElementById('button2').classList.remove('hidden')">fail to see the story within fifteen seconds</button>
+
+    <button type="button" class="hidden" id="button2"
+    onclick="document.getElementById('button3').classList.remove('hidden')">& the whole event dies.</button>
+
+    <button type="button" class="hidden" id="button3"
+    onclick="document.getElementById('inputbox1').classList.remove('hidden')">I worry hello will become extinct.</button>
+
+
+    <input type="input" class="hidden" id="inputbox1" oninput="spawnButton()" placeholder="ask me something..?"> 
+
+    <button id="button4" class="hidden" onclick="changeColor();">a man I love asked if I was planning to never speak to him again...</button>
+
+
+</div>
+<style>
+    .hidden{
+        display: none;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container{
+        position: relative;
+        width: 100vw;
+        height: 100vh; 
+        background-color: rgb(210, 30, 90);
+
+    }
+    #button1{
+        position: absolute;
+        left: 10vw;
+        top: 10vw;
+        bottom: 15vw;
+        font-family: "Bitcount Grid Double"; color:blueviolet
+    }
+    #button2{
+        position: absolute;
+        left: 30vw;
+        top: 23vw;
+        font-family: "Bitcount Grid Double"; color:blueviolet
+    }
+    #button3{
+        position: absolute;
+        right: 10vw;
+        top: 30vw;
+        bottom: 10vw;
+        font-family: "Bitcount Grid Double"; color:blueviolet
+    
+    }
+    #button4{
+        position: absolute;
+        left: 20vw;
+        right: 20vw;
+        top: 30vw;
+        bottom: 10vw;
+        margin: 10px;
+        margin-left: 90px;
+        margin-top: 30px;
+        margin-right: 100px;
+        font-family: "Bitcount Grid Double"; color:rgb(0, 0, 0)
+    
+    }
+    #input{
+        position: absolute;
+        left: 10vw;
+        top: 10vw;
+        bottom: 15vw;
+        font-family: "Bitcount Grid Double"; color:blueviolet
+    }
+    
+    
+
+/* font family */
+    .bitcount-grid-double- <uniquifier> {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    }
+
+
+
+</style>
+<script>
+    function spawnButton(){
+        const input = document.getElementById('inputbox1');
+        const btn = document.getElementById('button4');
+        if(input.value.trim().length >7){
+            btn.style.display='inline';
+        } else{
+            btn.style.display = 'none';
+        }
+        
+    }
+    var colors = ["blueviolet","blue","pink","green","lightblue","red"];
+    var colorIndex = 0;
+    function changeColor(){
+        var col = document.getElementById("button4");
+        if(colorIndex >= colors.length){
+            colorIndex = 0;
+        }
+    col.style.backgroundColor = colors[colorIndex];
+    colorIndex++;
+    }
+</script> 
 </body>
+
 </html>
