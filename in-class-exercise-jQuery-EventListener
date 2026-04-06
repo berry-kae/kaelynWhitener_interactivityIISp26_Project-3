@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button id="thisButton">This Button </button>
+    <p id ="message"></p>
+</body>
+<script>
+    const button = document.getElementById('thisButton');
+    button.addEventListener('click',function(){
+        document.getElementById('message').innerText = "c!";
+        document.body.style.backgroundColor = "lightblue";
+});
+   
+
+</script>
+
+</html>
+
+
+
