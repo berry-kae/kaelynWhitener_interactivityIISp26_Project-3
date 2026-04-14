@@ -48,6 +48,7 @@ body{
         right: 10vw;
         top: 30vw;
         bottom: 10vw;
+        font-family: "Pixelify Sans";
 }
 .hidden{
   display: none;
@@ -62,9 +63,13 @@ body{
   right: 100px;
 }
 
-#button2{
-        position: absolute;
-        right: 10vw;
-        top: 30vw;
-        bottom: 10vw;
+/* shopping list page /*/
+
+#gradient {
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+  background-color: rgb(0, 0, 0); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(232, 214, 199), rgb(234, 132, 92));
+  background-size: cover;
 }
