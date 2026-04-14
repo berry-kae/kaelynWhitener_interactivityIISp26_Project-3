@@ -16,15 +16,23 @@
    <div id="gradient"></div> 
 
 <div class="wrapper">
-    <p>hello. what's your name?</p>
+    <p>hello. <br>what's your name?</br></p>
     <img class="catgif"> 
         <img src="images\mewo.gif">
     </img>
-    <input type="input" id="inputbox1" oninput="spawnButton()" placeholder="...">
-    
-    
+    <input type="input" id="inputbox1" placeholder="...">
+<button type="button" id="button1"
+    onclick="document.getElementById('hamster').classList.remove('hidden')">enter</button>
+  
+
+<a href="#button2">
+    <img src="images/hamster.jpg" class="hidden" img id="hamster">
+</a>
+
+<button type="button" id="button2" class="hidden">surely not another hamster, right?</button>
+
 </div>
-<button id="button1">enter</button>
+
 
 
 

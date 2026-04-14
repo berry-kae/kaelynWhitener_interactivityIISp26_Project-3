@@ -49,3 +49,22 @@ body{
         top: 30vw;
         bottom: 10vw;
 }
+.hidden{
+  display: none;
+}
+
+#hamster{
+  position: absolute;
+  width: 220px;
+  height: 250px;
+  top: 100px;
+  left: 500px;
+  right: 100px;
+}
+
+#button2{
+        position: absolute;
+        right: 10vw;
+        top: 30vw;
+        bottom: 10vw;
+}
