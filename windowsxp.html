@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styleSheet.css">
+<link rel="stylesheet" href="https://unpkg.com/xp.css" />
+</head>
+
+
+<div class="title-bar">
+  <div class="title-bar-text">SPACE STATION</div>
+  <div class="title-bar-controls">
+    <button aria-label="Close"></button>
+  </div>
+</div>
+
+<body>
+    <div id="popupContainer">
+        <button onclick="openFunction()">
+            ?
+        </button>
+        <div id="overlay" class="hidden"></div>
+        <div id="popupBox" class="hidden">
+           <div id="divWindow">
+<div class="window" style="width: 515px">
+  <div class="title-bar">
+    <div class="title-bar-text">you've been invaded!~ ★</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+       
+    </div>
+  </div>
+  <div class="window-body" id="window-body" class="hidden">
+  <img src="images\alien-gif.gif"  img id="alien">
+  </div>
+</div>
+</div> 
+
+
+            <button type="button" id="closeButton" onclick="changeColor()">
+                close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function openFunction() {
+            const over =
+                document.getElementById(
+                    "overlay"
+                );
+            const popupBox =
+                document.getElementById(
+                    "popupBox"
+                );
+            over.classList.toggle("hidden");
+            popupBox.classList.toggle(
+                "hidden"
+            );
+        }
+
+var colors = ["blueviolet","blue","pink","green","lightblue","red"];
+    var colorIndex = 0;
+    function changeColor(){
+        var col = document.getElementById("closeButton");
+        if(colorIndex >= colors.length){
+            colorIndex = 0;
+        }
+    col.style.backgroundColor = colors[colorIndex];
+    colorIndex++;
+    }
+    </script>
+</body>
+
+<style>
+ body {
+      background-color: rgb(216, 173, 230);
+    }
+</style>
+
+
+
+
+
+
+</body>
+</html>
