@@ -80,3 +80,7 @@ div.list {
             height:300px;
             
         }
+a{
+  text-decoration: none;
+  color: black;
+}
