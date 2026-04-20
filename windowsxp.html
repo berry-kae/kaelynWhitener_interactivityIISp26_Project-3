@@ -17,9 +17,8 @@
 </div>
 
 <body>
-    <div id="popupContainer">
-        <button onclick="openFunction()">
-            ?
+        <button type="button" id="openButton" onclick="openFunction()">
+            <strong>?</strong>
         </button>
         <div id="overlay" class="hidden"></div>
         <div id="popupBox" class="hidden">
@@ -35,18 +34,16 @@
     </div>
   </div>
   <div class="window-body" id="window-body" class="hidden">
-  <img src="images\alien-gif.gif"  img id="alien">
+  <img src="images\alien-gif.gif"  img id= "alien">
   </div>
 </div>
-</div> 
-
-
-            <button type="button" id="closeButton" onclick="changeColor()">
-                close
-            </button>
+            <button type="button" id="closeButton" onclick="changeColor()"> close </button>
         </div>
     </div>
 
+
+
+</body>
     <script>
         function openFunction() {
             const over =
@@ -62,19 +59,27 @@
                 "hidden"
             );
         }
+       function changeColor(){
+        const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange'];
+        const randomColor = colors[Math.floor(Math.random()* colors.length)];
+        document.body.style.backgroundColor = randomColor;
+       }
+    
+       let i = 1;
+        let body = document.getElementsByTagName("body")[0];
 
-var colors = ["blueviolet","blue","pink","green","lightblue","red"];
-    var colorIndex = 0;
-    function changeColor(){
-        var col = document.getElementById("closeButton");
-        if(colorIndex >= colors.length){
-            colorIndex = 0;
+        for (i; i <= 200; i++) {
+        let button = document.createElement("button");
+        button.innerHTML = '?';
+        body.appendChild(button);
+    
         }
-    col.style.backgroundColor = colors[colorIndex];
-    colorIndex++;
-    }
+
+       
+
+    
     </script>
-</body>
+
 
 <style>
  body {
