@@ -17,9 +17,12 @@
 </div>
 
 <body>
-        <button type="button" id="openButton" onclick="openFunction()">
+        <button type="button" id="openButton" onclick="openFunction(); playAudio()">
             <strong>?</strong>
         </button>
+        <audio id="alien-takeover">
+            <source src="audios\Alien_arrival_sound.mp3" type="audio/mpeg">
+        </audio>
         <div id="overlay" class="hidden"></div>
         <div id="popupBox" class="hidden">
            <div id="divWindow">
@@ -34,13 +37,14 @@
     </div>
   </div>
   <div class="window-body" id="window-body" class="hidden">
+    <a href="paradise.html">
   <img src="images\alien-gif.gif"  img id= "alien">
+</a>
   </div>
 </div>
             <button type="button" id="closeButton" onclick="changeColor()"> close </button>
         </div>
     </div>
-
 
 
 </body>
@@ -74,12 +78,23 @@
         body.appendChild(button);
     
         }
+        function playAudio() {
+        var x = document.getElementById("alien-takeover");
+        x.play();
+        
+        }
+        const myAudio = document.getElementById("alien-takeover");
+        myAudio.volume = 0.1;
 
-       
-
+        const myButton = document.getElementById('closeButton');
+        myButton.addEventListener('click', function() {
+        window.location.href = 'paradise.html';
+        });
     
     </script>
-
+<marquee>
+    ☆⋆｡𖦹°‧★🛸
+</marquee>
 
 <style>
  body {
