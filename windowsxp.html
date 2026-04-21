@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://unpkg.com/xp.css" />
 </head>
 
-
+<body>
+    <div class="bgcolor3"></div>
 <div class="title-bar">
   <div class="title-bar-text">SPACE STATION</div>
   <div class="title-bar-controls">
@@ -16,8 +17,8 @@
   </div>
 </div>
 
-<body>
-        <button type="button" id="openButton" onclick="openFunction(); playAudio()">
+
+        <button type="button" id="openButton" onclick="openFunction(); playAudio(); changeColor()">
             <strong>?</strong>
         </button>
         <audio id="alien-takeover">
@@ -37,12 +38,12 @@
     </div>
   </div>
   <div class="window-body" id="window-body" class="hidden">
-    <a href="paradise.html">
+    
   <img src="images\alien-gif.gif"  img id= "alien">
 </a>
   </div>
 </div>
-            <button type="button" id="closeButton" onclick="changeColor()"> close </button>
+            <button type="button" id="closeButton"> close </button>
         </div>
     </div>
 
@@ -63,11 +64,7 @@
                 "hidden"
             );
         }
-       function changeColor(){
-        const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange'];
-        const randomColor = colors[Math.floor(Math.random()* colors.length)];
-        document.body.style.backgroundColor = randomColor;
-       }
+       
     
        let i = 1;
         let body = document.getElementsByTagName("body")[0];
@@ -76,8 +73,8 @@
         let button = document.createElement("button");
         button.innerHTML = '?';
         body.appendChild(button);
-    
         }
+
         function playAudio() {
         var x = document.getElementById("alien-takeover");
         x.play();
