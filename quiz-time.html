@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="styleSheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="bgcolor4">
+
+<div class="quiz-container">
+  <form id="quiz-form">
+    <div class="d-flex">
+      <div class="question">
+        <p>1. What is the capital of France?</p>
+        <div class="answers">
+          <label>
+            <input type="radio" name="q1" value="a">
+            Paris
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b">
+            Madrid
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c">
+            London
+          </label>
+          <label>
+            <input type="radio" name="q1" value="d">
+            Rome
+          </label>
+        </div>
+      </div>
+      
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+  
+  <div class="result" id="result"></div>
+</div>
+
+
+
+<script>
+const quizForm = document.getElementById('quiz-form');
+const correctAnswers = ['a', 'c'];
+
+quizForm.addEventListener('submit', e => {
+  e.preventDefault();
+});
+</script>
+
+</div>
+</body>
+</html>

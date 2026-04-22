@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <div class="bgcolor3"></div>
+<div id="bgcolor3">
+
 <div class="title-bar">
-  <div class="title-bar-text">SPACE STATION</div>
+  <div class="title-bar-text"><h3>SPACE STATION</h3></div>
   <div class="title-bar-controls">
     <button aria-label="Close"></button>
   </div>
@@ -64,17 +65,6 @@
                 "hidden"
             );
         }
-       
-    
-       let i = 1;
-        let body = document.getElementsByTagName("body")[0];
-
-        for (i; i <= 200; i++) {
-        let button = document.createElement("button");
-        button.innerHTML = '?';
-        body.appendChild(button);
-        }
-
         function playAudio() {
         var x = document.getElementById("alien-takeover");
         x.play();
@@ -85,20 +75,11 @@
 
         const myButton = document.getElementById('closeButton');
         myButton.addEventListener('click', function() {
-        window.location.href = 'paradise.html';
+        window.location.href = 'quiz-time.html';
         });
     
     </script>
-<marquee>
-    ☆⋆｡𖦹°‧★🛸
-</marquee>
 
-
-
-
-
-
-
-
+</div>
 </body>
 </html>

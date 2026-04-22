@@ -66,10 +66,11 @@ body{
 /*shopping list page/*/
 
 #bgcolor1 {
-  height: 100vh;
-  max-width: 100vw;
+  height: 150vh;
+  width: 100vw;
   margin: 0;
   background-color: rgb(234, 132, 92); 
+  background-image: url('images/kitchen-cat.jpg');
   background-size: cover;
 }
 div.list {
@@ -94,12 +95,22 @@ a{
   0% { background-color: red; }
   100% { background-color: rgb(223, 32, 217); }
 }
+
 #bgcolor3 {
   height: 100vh;
   width: 100vw;
   margin: 0;
   background-color: rgb(255, 118, 164);
+  background-image: url('images/cat-on-earth.jpg');
   background-size: cover;
+}
+
+#openButton{
+  height: 100px;
+  width: 100px;
+  top: 100px;
+  left: 100px;
+  right: 100px;
 }
 
 #bgcolor2 {
@@ -111,3 +122,11 @@ a{
   background-size: cover;
 }
 
+#bgcolor4 {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(255, 118, 164);
+  background-image: url('images/clouds_wallpaper.jpg');
+  background-size: cover;
+}
