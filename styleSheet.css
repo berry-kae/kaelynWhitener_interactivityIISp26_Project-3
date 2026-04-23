@@ -71,7 +71,7 @@ body{
   margin: 0;
   background-color: rgb(234, 132, 92); 
   background-image: url('images/kitchen-cat.jpg');
-  background-size: cover;
+  background-size: repeat;
 }
 
 
@@ -126,7 +126,7 @@ a{
   width: 100vw;
   margin: 0;
   background-color: rgb(255, 118, 164);
-  background-image: url('images/windows_wallpaper.jpg');
+  background-image: url('images/cat_windows.png');
   background-size: cover;
 }
 
@@ -149,4 +149,13 @@ a{
             font-size: larger;
 
 
+}
+
+.letter {
+    animation: textappear 6s;
+}
+
+@keyframes textappear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

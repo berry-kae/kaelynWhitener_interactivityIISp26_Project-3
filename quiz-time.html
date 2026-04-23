@@ -37,15 +37,8 @@
       </div>
       
     </div>
-    <button type="submit" id="submit-btn">Submit</button>
+    <button type="submit" id="submit-btn" onclick="catPopup();">Submit</button>
   </form>
-  
-  <div class="result" id="result"></div>
-   <img src="images\cat-explosion.jpg"  img id= "explosion">
-   <div id="overlay" class="hidden"></div>
-        <div id="popupBox" class="hidden">
-</div>
-
 
 
 <script>
@@ -53,32 +46,9 @@ const quizForm = document.getElementById('quiz-form');
 const resultDiv = document.getElementById('result');
 const correctAnswers = ['c'];
 quizForm.addEventListener('submit', e => {
-  e.preventDefault();
+
 });
 
-function catPopup() {
-            const over =
-                document.getElementById(
-                    "overlay"
-                );
-            const popupBox =
-                document.getElementById(
-                    "popupBox"
-                );
-            over.classList.toggle("hidden");
-            popupBox.classList.toggle(
-                "hidden"
-            ); }
-
-function checkAnswer(form) {
-    var answer = form.Answer.value;
-    if (answer == "c") {
-        catPopup();
-    }
-    else {
-        alert("Incorrect")
-    }
-}​
 
 </script>
 
