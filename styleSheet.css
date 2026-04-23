@@ -73,17 +73,25 @@ body{
   background-image: url('images/kitchen-cat.jpg');
   background-size: cover;
 }
+
+
 div.list {
             position:  absolute;
             top : 200px;
-            left: 200px;
-            width: 200px;
-            height:300px;
-            
+            left: 300px;
+            width: 350px;
+            height:400px;
+            font-family: "Pixelify Sans"; color:rgb(255, 147, 89);
+            font-size: larger;
+            background-color: rgb(251, 194, 180);
+            text-align: center;
+          
         }
 a{
   text-decoration: none;
   color: black;
+  font-family: "Pixelify Sans"; color:rgb(196, 112, 63) 
+
 }
 
 /* windows xp page /*/
@@ -129,4 +137,16 @@ a{
   background-color: rgb(255, 118, 164);
   background-image: url('images/clouds_wallpaper.jpg');
   background-size: cover;
+}
+
+.quiz-container{
+  position:  absolute;
+            top : 200px;
+            left: 300px;
+            width: 800px;
+            height:400px;
+            font-family: "Pixelify Sans"; color:rgb(0, 0, 0);
+            font-size: larger;
+
+
 }
