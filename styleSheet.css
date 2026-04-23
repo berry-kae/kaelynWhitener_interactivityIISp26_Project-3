@@ -121,14 +121,6 @@ a{
   right: 100px;
 }
 
-#bgcolor2 {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  background-color: rgb(255, 118, 164);
-  background-image: url('images/cat_windows.png');
-  background-size: cover;
-}
 
 #bgcolor4 {
   height: 100vh;
@@ -151,11 +143,33 @@ a{
 
 }
 
+/* no escape page /*/
+
 .letter {
-    animation: textappear 6s;
+    animation: fadeIn 20s;
+    font-family: Arizonia;
+    font-size: 50px;
 }
 
-@keyframes textappear {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-600px);
+  }
+}
+#bgcolor2 {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: rgb(255, 118, 164);
+  background-image: url('images/cat_windows.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  min-height: 200vh;
 }
