@@ -10,7 +10,7 @@
 
 <body>
 <div id="bgcolor4">
-
+<div class="page">
 <div class="quiz-container">
   <form id="quiz-form">
     <div class="d-flex">
@@ -18,40 +18,45 @@
         <h3>How will you find the escape?</h3>
         <div class="answers">
           <label>
-            <input type="radio" name="q1" value="a">
+            <input type="radio" id="a">
             meowing until it appears
           </label>
           <label>
-            <input type="radio" name="q1" value="b">
+            <input type="radio" id="b">
             scratching the screen
           </label>
           <label>
-            <input type="radio" name="q1" value="c">
+            <input type="radio" id="c">
             entering the space-time continuum
           </label>
           <label>
-            <input type="radio" name="q1" value="d">
+            <input type="radio" id="d">
             running away
           </label>
         </div>
       </div>
       
     </div>
-    <button type="submit" id="submit-btn" onclick="catPopup();">Submit</button>
-  </form>
+    <button type="button" id="submit"
+    onclick="document.getElementById('explosion').classList.remove('hidden')">submit answer</button>
+</div>
+</div>
+<a href="no-escape.html">
+    <img src="images/cat-explosion.jpg" class="hidden" img id="explosion">
+</a>
 
 
 <script>
-const quizForm = document.getElementById('quiz-form');
-const resultDiv = document.getElementById('result');
-const correctAnswers = ['c'];
-quizForm.addEventListener('submit', e => {
+    const container = document.getElementById("page")
 
-});
+    for(let i=0; i<5; i++){
+      let img = document.createElement('img');
+      img.src = "images/cat-explosion.jpg";
+      container.appendChild("img"); //add loop to page
 
-
+    }
 </script>
 
-</div>
+
 </body>
 </html>

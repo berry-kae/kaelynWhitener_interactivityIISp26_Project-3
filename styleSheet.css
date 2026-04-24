@@ -81,7 +81,7 @@ div.list {
             left: 300px;
             width: 350px;
             height:400px;
-            font-family: "Pixelify Sans"; color:rgb(255, 89, 89);
+            font-family: "Reenie Beanie"; color:rgb(255, 89, 89);
             font-size: 40px;
             text-align: center;
           
@@ -92,7 +92,7 @@ div.list{
 a{
   text-decoration: none;
   color: black;
-  font-family: "Pixelify Sans"; color:rgb(160, 20, 13) 
+  font-family: "Reenie Beanie"; color:rgb(160, 20, 13) 
 }
 a{
   animation: text-color-change2 20s;
@@ -179,18 +179,7 @@ a{
   color:crimson;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* quiz page /*/
 #bgcolor4 {
   height: 100vh;
   width: 100vw;
@@ -204,13 +193,21 @@ a{
   position:  absolute;
             top : 200px;
             left: 300px;
-            width: 800px;
+            width: 900px;
             height:400px;
             font-family: "Pixelify Sans"; color:rgb(0, 0, 0);
-            font-size: larger;
-
-
+            font-size: 35px;
 }
+
+#explosion{
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 420px;
+  right: 100px;
+}
+
+
 
 /* no escape page /*/
 
