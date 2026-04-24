@@ -71,7 +71,7 @@ body{
   margin: 0;
   background-color: rgb(234, 132, 92); 
   background-image: url('images/kitchen-cat.jpg');
-  background-size: repeat;
+  background-size: cover;
 }
 
 
@@ -81,24 +81,41 @@ div.list {
             left: 300px;
             width: 350px;
             height:400px;
-            font-family: "Pixelify Sans"; color:rgb(255, 147, 89);
-            font-size: larger;
-            background-color: rgb(251, 194, 180);
+            font-family: "Pixelify Sans"; color:rgb(255, 89, 89);
+            font-size: 40px;
             text-align: center;
           
         }
+div.list{
+  animation: text-color-change 20s;
+}
 a{
   text-decoration: none;
   color: black;
-  font-family: "Pixelify Sans"; color:rgb(196, 112, 63) 
-
+  font-family: "Pixelify Sans"; color:rgb(160, 20, 13) 
 }
+a{
+  animation: text-color-change2 20s;
+}
+
+@keyframes text-color-change{
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+}
+@keyframes text-color-change2{
+  0% { color: red; }
+  50% { color: rgb(240, 113, 45); }
+  100% { color: rgb(175, 163, 29); }
+}
+
+
+
+
 
 /* windows xp page /*/
 
-#button4{
-  position: absolute;
-}
+
 @keyframes changeColor {
   0% { background-color: red; }
   100% { background-color: rgb(223, 32, 217); }
@@ -114,12 +131,64 @@ a{
 }
 
 #openButton{
-  height: 100px;
-  width: 100px;
-  top: 100px;
+  height: 50px;
+  width: 30px;
+  position: relative;
+  top: 200px;
   left: 100px;
   right: 100px;
+
 }
+
+#button8{
+  animation: buttonFade 5s
+}
+
+@keyframes buttonFade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#button8{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  left: 230px;
+  color:yellowgreen;
+  font-size: 20px;
+}
+
+#button9{
+  position: relative;
+  height: 60px;
+  width: 60px;
+  top: 330px;
+  left: 960px;
+  font-size: 15px;
+  color:rgb(191, 28, 255);
+}
+
+#button10{
+  position: relative;
+  height: 70px;
+  width: 100px;
+  top: 530px;
+  left: 160px;
+  font-size: 15px;
+  color:crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #bgcolor4 {
@@ -146,19 +215,20 @@ a{
 /* no escape page /*/
 
 .letter {
-    animation: fadeIn 20s;
+    animation: fadeIn 50s;
     font-family: Arizonia;
     font-size: 50px;
+    text-shadow: yellow;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    transform: translateY(200px);
+    opacity: 0.5;
+    transform: translateY(700px);
   }
   100% {
     opacity: 1;
-    transform: translateY(-600px);
+    transform: translateY(-800px);
   }
 }
 #bgcolor2 {
@@ -168,7 +238,6 @@ a{
   background-color: rgb(255, 118, 164);
   background-image: url('images/cat_windows.png');
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   min-height: 200vh;
